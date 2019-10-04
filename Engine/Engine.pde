@@ -1,3 +1,4 @@
+//Change the number inside the bracket i.e 2 now for no. of particles
 All_masses samples = new All_masses(2);
 
 void setup() {
