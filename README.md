@@ -6,7 +6,7 @@ Pendulum in this program is not an small angle approximation , instead the actua
 Open up processing and tweak the parameters IN THE CODE like mass, charge, initial position, velocity, number of particles to see how the system would behave. You have to tweak params in "masses" class and change number of particles in the "Engine" file.
 
 * For SHM,
-the process is similar to that of engine, now it is even easier. You just have to specify the box's initial position and length and width
+the process is similar to that of engine, now it is even easier. You just have to specify the box's initial position and length and width. To use compound pendulum use the cp branch.
 
 * For Pendulum do as engine, the only difference is providing the hinge, length of pendulum and initial angle.
 
