@@ -1,7 +1,7 @@
 //hinge is the point about which the pendulums will rotate
-PVector hinge = new PVector(500,200);
+PVector hinge = new PVector(500,50);
 //A collection is a collection of beads with 4 beads as of now
-beads collection  = new beads(7,hinge);
+beads collection  = new beads(4,hinge);
 
 
 void setup() {
@@ -12,6 +12,6 @@ void setup() {
 void draw() { 
    background(255);
    fill(255,0,0);
-   ellipse(500,200,10,10);
+   ellipse(500,50,10,10);
    collection.show_all();
 }

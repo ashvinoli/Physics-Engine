@@ -1,6 +1,5 @@
 class bead {
     PVector pos = new PVector(0,0);
-    PVector hinge = new PVector(0,0);
     float damp_const = 0.001;
     float theta;
     float theta_d = 0.0;
@@ -12,16 +11,15 @@ class bead {
     bead (PVector init_hinge, float P_l, float init_theta){
        thread_length = P_l;
        theta = init_theta;
-       hinge = init_hinge;
-       update_pos();
+       update_pos(init_hinge);
     }
-    void update_pos(){
+    void update_pos(PVector hinge){
       float r_angle = radians(theta);
       pos.x = hinge.x + thread_length * sin(r_angle);
       pos.y = hinge.y + thread_length * cos(r_angle);
     }
     
-    void show(){
+    void show(PVector hinge){
       line(hinge.x,hinge.y,pos.x,pos.y);
       strokeWeight(0.8);
       fill(colour*0.9,100,colour*0.5);
@@ -30,11 +28,11 @@ class bead {
       
     }
     
-    void update(){
+    void update(PVector hinge){
      theta_dd = (-g/thread_length) * sin(radians(theta))-damp_const * theta_d;
      theta_d += theta_dd;
      theta += theta_d;
-     update_pos();
+     update_pos(hinge);
     }
     
     
