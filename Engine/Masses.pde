@@ -4,8 +4,8 @@ class All_masses{
    All_masses(int size){
      masses = new Point_mass[size];
      //The parameters for point mass are x_pos, y_pos, x_velocity, y_velocity, mass,charge
-     masses[0] = new Point_mass(300,400,0,-30,1,0.05);
-     masses[1] = new Point_mass(500,400,0,30,1,-0.05);
+     masses[0] = new Point_mass(300,400,0,-30,1,0.005);
+     masses[1] = new Point_mass(500,400,0,30,1,-0.005);
      //If you change the number in Engine to 3 make sure to add another instance like below
      //masses[2] = new Point_mass(400,400,0,-8,1,0.05);
      
