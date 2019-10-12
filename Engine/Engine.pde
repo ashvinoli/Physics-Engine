@@ -3,7 +3,7 @@ All_masses samples = new All_masses(2);
 
 void setup() {
   size(800, 800);
-  frameRate(1);
+  frameRate(10);
 }
 
 void draw() { 
