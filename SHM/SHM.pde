@@ -1,9 +1,9 @@
 // Initialize the boxes with their position and length and width
-Box box1 = new Box(500,500,400,400);
-Box box2 = new Box(300,500,400,400);
+Box box1 = new Box(600,400,400,400);
+Box box2 = new Box(400,200,400,400);
 void setup() {
   size(800, 800); 
-  frameRate(50);
+  frameRate(100);
 }
 
 void draw() { 

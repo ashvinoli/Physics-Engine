@@ -7,6 +7,7 @@ class bead {
     float theta_dd = 0.0;
     float g = 9.81;
     float thread_length;
+    int colour = (int)random(255);
     
     bead (PVector init_hinge, float P_l, float init_theta){
        thread_length = P_l;
@@ -23,7 +24,7 @@ class bead {
     void show(){
       line(hinge.x,hinge.y,pos.x,pos.y);
       strokeWeight(0.8);
-      fill(0,255,0);
+      fill(colour*0.9,100,colour*0.5);
       ellipse(pos.x, pos.y,20,20);
       fill(0,0,255);
       

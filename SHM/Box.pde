@@ -8,7 +8,7 @@ class Box {
    
    
    Box(float x, float y, float eq_x, float eq_y){
-     m =  2000;
+     m =  20000;
      k = 5;
      eq_pos = new PVector(eq_x,eq_y);
      pos = new PVector(x,y);
