@@ -1,6 +1,7 @@
 class bead {
     PVector pos = new PVector(0,0);
     PVector hinge = new PVector(0,0);
+    float damp_const = 0.001;
     float theta;
     float theta_d = 0.0;
     float theta_dd = 0.0;
@@ -29,7 +30,7 @@ class bead {
     }
     
     void update(){
-     theta_dd = (-g/thread_length) * sin(radians(theta));
+     theta_dd = (-g/thread_length) * sin(radians(theta))-damp_const * theta_d;
      theta_d += theta_dd;
      theta += theta_d;
      update_pos();
