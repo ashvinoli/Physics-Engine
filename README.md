@@ -8,5 +8,5 @@ Open up processing and tweak the parameters IN THE CODE like mass, charge, initi
 * For SHM,
 the process is similar to that of engine, now it is even easier. You just have to specify the box's initial position and length and width. 
 
-* For Pendulum do as engine, the only difference is providing the hinge, length of pendulum and initial angle. To use compound pendulum use the "cp" branch.
+* For Pendulum do as engine, the only difference is providing the hinge, length of pendulum and initial angle. To use n pendulum system use the "cp" branch.
 
